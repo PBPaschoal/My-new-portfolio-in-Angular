@@ -4,7 +4,6 @@ Este é o meu portfólio de desenvolvedor, criado com Angular. Aqui você pode v
 
 ## Tecnologias Usadas
 - **Frontend**: Angular 18.2.12
-- **Backend**: (se aplicável, adicione o backend aqui)
 - **Outras ferramentas**: Bootstrap, edições e criações de imagens com Photoshop e IA.
 
 ## Como Rodar o Projeto
