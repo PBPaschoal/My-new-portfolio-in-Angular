@@ -1,0 +1,29 @@
+.primeira-section,
+.section-contatos {
+    margin: 4%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.card a {
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+    transition: 0.8s;
+}
+
+.card a:hover {
+    color:rgb(255, 255, 255);
+    background-color: rgb(182, 182, 182);
+}
+
+.primeira-section {
+    margin: 4%;
+}

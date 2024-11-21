@@ -1,0 +1,24 @@
+.meus-cursos {
+    margin: 30px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.meus-cursos .container {
+    flex-wrap: wrap;
+}

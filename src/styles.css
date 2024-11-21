@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 1%;
+    padding: 1%;
+}
+
+header,footer {
+    text-align: center;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.card a {
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Alinha os itens em uma coluna */
+        padding: 10px; /* Reduz o espaçamento interno */
+        gap: 5px; /* Reduz o espaçamento entre itens */
+        flex-wrap: wrap;
+    }
+}
