@@ -1,27 +1,29 @@
-# Portfolio
+# Portfolio - Desenvolvedor Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+Este é o meu portfólio de desenvolvedor, criado com Angular. Aqui você pode ver exemplos dos meus projetos e conhecer um pouco mais sobre minhas habilidades e experiência.
 
-## Development server
+## Tecnologias Usadas
+- **Frontend**: Angular 18.2.12
+- **Backend**: (se aplicável, adicione o backend aqui)
+- **Outras ferramentas**: Bootstrap, edições e criações de imagens com Photoshop e IA.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Como Rodar o Projeto
 
-## Code scaffolding
+1. Clone o repositório para sua máquina local:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. Navegue até a pasta do projeto:
+cd seu-repositorio
 
-## Build
+3. Instale as dependências:
+npm install
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4. Inicie o servidor de desenvolvimento:
+ng serve
 
-## Running unit tests
+5. Acesse o portfólio em seu navegador em http://localhost:4200/.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Em desenvolvimento:
+20/11/2024
