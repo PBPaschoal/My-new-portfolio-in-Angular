@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'FonteGoogle'; 
+    src: url('/fonts/Product Sans Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FonteGoogle';
+    src: url('/fonts/Product Sans Bold Italic.ttf') format('truetype'); 
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FonteGoogle';
+    src: url('/fonts/Product Sans Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 .meus-cursos {
     margin: 30px;
 }
@@ -8,7 +29,7 @@ h3 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-h1, 
+h1,
 .sobre-cursos {
     text-align: center;
 }
@@ -20,10 +41,56 @@ h2 {
     margin-bottom: 20px;
 }
 
+.meus-cursos .container {
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.fonte-google {
+    font-family: 'FonteGoogle', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Cores */
+
 .h2-em-andamentos {
     color: rgb(6, 97, 171);
 }
 
-.meus-cursos .container {
-    flex-wrap: wrap;
+.h2-concluidos {
+    color: rgb(11, 163, 11);
+}
+
+h3.udemy {
+    color: rgb(125, 6, 244);
+}
+
+.g-azul {
+    color: rgb(66, 133, 244);
+}
+
+.o-vermelho,
+.e-vermelho {
+    color: rgb(219, 68, 55);
+}
+
+.o-amarelo {
+    color: rgb(244, 180, 0);
+}
+
+.l-verde {
+    color: rgb(15, 157, 88);
+}
+
+.coursera {
+    color: rgb(31, 130, 236);
+}
+
+.cursos-concluidos .btn.btn-dark:hover {
+    transition: 0.3s;
+    background-color: rgb(25, 135, 84);
 }
