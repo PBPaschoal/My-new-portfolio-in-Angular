@@ -1,41 +1,403 @@
 <section class="meus-cursos">
-    <h1>CURSOS!</h1>
-    <p>Um resumo sobre os cursos que já concluí, revisando e em andamento.</p>
-    <h2>EM ANDAMENTO:</h2>
+    <h1>Cursos!</h1>
+    <p class="sobre-cursos">Um resumo sobre os cursos que já concluí, revisando e em andamento.</p>
+    <h2 class="h2-em-andamentos">Em andamento:</h2>
+    <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
     <div class="container">
-        <!-- Java -->
+        <!-- 01 Java -->
         <div class="card" style="width: 18rem;">
-            <img src="/udemy.png" class="card-img-top" alt="...">
+            <img src="/logos/udemy.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-text">
-                    <strong>Java POO</strong>
+                    <strong>Java</strong>
                     <br><strong>Professor:</strong> Nelio Alves
                     <br>Horas: 54,5
                 </p>
-                <button><a href="">Mais informações</a></button>
+                <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJava"
+                    aria-controls="offcanvasJava">Mais informações</button>
             </div>
         </div>
-        <!-- Java Spring Boot -->
+        <!-- 01 Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasJava" aria-labelledby="offcanvasTitle">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasTitle">Java - Detalhes</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h3>Udemy</h3>
+                <p><strong>Java</strong></p>
+                <p>
+                    <strong>Professor:</strong> Nelio Alves
+                    <br>Horas: 54,5
+                    <br><strong>Curso mais didático e completo de Java e OO, UML, JDBC, JavaFX, Spring Boot, JPA,
+                        Hibernate, MySQL, MongoDB e muito mais.</strong>
+                </p>
+                <p><strong>Curso inclui:</strong></p>
+                <ul>
+                    <li>Lógica de programação e algoritmos</li>
+                    <li>Sintaxe da linguagem Java</li>
+                    <li>Classes, atributos e métodos</li>
+                    <li>Construtores, sobrecarga, encapsulamento</li>
+                    <li>Estruturas de dados: arrays e coleções</li>
+                    <li>Enumerações, composição</li>
+                    <li>Herança, polimorfismo, interfaces</li>
+                    <li>Tratamento de exceções</li>
+                    <li>Generics</li>
+                    <li>Programação funcional e expressões lambda, Stream API</li>
+                    <li>Manipulação de arquivos</li>
+                </ul>
+                <p><strong>Principais ferramentas e frameworks para se trabalhar com Java profissionalmente no mercado,
+                        tais como:</strong></p>
+                <ul>
+                    <li>JDBC para acesso a dados baseado em SQL</li>
+                    <li>JavaFX para interface gráfica</li>
+                    <li>Git / Github para versionamento</li>
+                    <li>Spring Boot - principal framework Java para desenvolvimento comercial em Java</li>
+                    <li>JPA / Hibernate para acesso a dados com mapeamento objeto-relacional (ORM)</li>
+                    <li>Maven para gerenciamento de dependências de projeto</li>
+                    <li>Spring Data JPA - framework para acesso a dados ORM</li>
+                    <li>Spring Data MongoDB - framework para acesso a dados NoSQL ao banco MongoDB</li>
+                </ul>
+                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="42"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-dark" style="width: 42%;">42%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 02 Java Spring Boot -->
         <div class="card" style="width: 18rem;">
-            <img src="/udemy.png" class="card-img-top" alt="...">
+            <img src="/logos/udemy.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-text">
                     <strong>Java e Spring Boot</strong>
                     <br><strong>Professor:</strong> Nelio Alves
                     <br>Horas: 8,5
                 </p>
-                <button><a href="">Mais informações</a></button>
+                <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasJavaSpring" aria-controls="offcanvasJavaSpring">Mais informações</button>
             </div>
         </div>
-        <!-- Java Spring Boot -->
+        <!-- 02 Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasJavaSpring" aria-labelledby="offcanvasTitle">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasTitle">Java e Spring Boot - Detalhes</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h3>Udemy</h3>
+                <p><strong>Java e Spring Boot</strong></p>
+                <p>
+                    <strong>Professor:</strong> Nelio Alves
+                    <br>Horas: 8,5
+                </p>
+                <p><strong>Curso inclui:</strong></p>
+                <ul>
+                    <li>Feign para requisições de API entre microsserviços</li>
+                    <li>Ribbon para balanceamento de carga</li>
+                    <li>Servidor Eureka para registro dos microsserviços</li>
+                    <li>API Gateway Zuul para roteamento e autorização</li>
+                    <li>Hystrix para tolerância a falhas</li>
+                    <li>OAuth e JWT para autenticação e autorização</li>
+                    <li>Configuração centralizada com Git</li>
+                    <li>Geração de containers Docker</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 03 C# -->
         <div class="card" style="width: 18rem;">
-            <img src="/udemy.png" class="card-img-top" alt="...">
+            <img src="/logos/udemy.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-text">
-
+                    <strong>C#</strong>
+                    <br><strong>Professor:</strong> Nelio Alves
+                    <br>Horas: 38
                 </p>
-                <button><a href="">Mais informações</a></button>
+                <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCSharp"
+                    aria-controls="offcanvasCSharp">Mais informações</button>
             </div>
         </div>
+        <!-- 03 Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCSharp" aria-labelledby="offcanvasTitle">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasTitle">C# - Detalhes</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h3>Udemy</h3>
+                <p><strong>C#</strong></p>
+                <p>
+                    <strong>Professor:</strong> Nelio Alves
+                    <br>Horas: 38
+                    <br><strong>Curso mais didático e completo de C# e OO: composição, herança, coleções, arquivos,
+                        LINQ, lambda, delegates e muito mais.</strong>
+                </p>
+                <p><strong>Curso inclui:</strong></p>
+                <ul>
+                    <li>Dominar Programação Orientada a Objetos e linguagem C#</li>
+                    <li>Criar soluções flexíveis, extensíveis e testáveis</li>
+                    <li>Adquirir a base sólida teórica e prática para ser um desenvolvedor C# de sucesso</li>
+                    <li>Aplicar o conhecimento de orientação a objetos na construção de soluções para problemas reais
+                    </li>
+                    <li>Compreender diagramas de classe UML, tanto de entidades quanto de serviços</li>
+                </ul>
+                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="18"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-dark" style="width: 18%;">18%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 04 Modelagem de Dados UML -->
+        <div class="card" style="width: 18rem;">
+            <img src="/logos/udemy.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">
+                    <strong>Modelagem de Dados UML</strong>
+                    <br><strong>Professor:</strong> Nelio Alves
+                    <br>Horas: 13
+                </p>
+                <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasModelagemDeDadosUML" aria-controls="offcanvasModelagemDeDadosUML">Mais
+                    informações</button>
+            </div>
+        </div>
+        <!-- 04 Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasModelagemDeDadosUML"
+            aria-labelledby="offcanvasTitle">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasTitle">Modelagem de Dados UML - Detalhes</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h3>Udemy</h3>
+                <p><strong>C#</strong></p>
+                <p>
+                    <strong>Professor:</strong> Nelio Alves
+                    <br>Horas: 13
+                    <br><strong>Curso completo de modelagem conceitual com UML. Teoria e prática! Bônus: projeto Java,
+                        Spring Boot e Hibernate/JPA.</strong>
+                </p>
+                <p><strong>O que você aprenderá:</strong></p>
+                <ul>
+                    <li>Ao final do curso o aluno será capaz de modelar os dados de um sistema usando UML como
+                        ferramenta</li>
+                </ul>
+                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="11"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-dark" style="width: 11%;">11%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 05 Banco de Dados e SQL -->
+        <div class="card" style="width: 18rem;">
+            <img src="/logos/udemy.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">
+                    <strong>Banco de Dados e SQL</strong>
+                    <br><strong>Professor:</strong> Nelio Alves
+                    <br>Horas: 13
+                </p>
+                <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBancoDeDadosESQL" aria-controls="offcanvasBancoDeDadosESQL">Mais
+                    informações</button>
+            </div>
+        </div>
+        <!-- 05 Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBancoDeDadosESQL"
+            aria-labelledby="offcanvasTitle">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasTitle">Banco de Dados e SQL - Detalhes</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h3>Udemy</h3>
+                <p><strong>Banco de Dados e SQL</strong></p>
+                <p>
+                    <strong>Professor:</strong> Felipe Mafra
+                    <br>Horas: 58,5
+                    <br><strong>>Business Intelligence, SQL Server, MySQL, Oracle, T-SQL e PLSQL! Tudo aqui no curso de
+                        bancos de dados relacionais!</strong>
+                </p>
+                <p><strong>O que você aprenderá:</strong></p>
+                <ul>
+                    <li>Entender a diferença entre um Administrador de Dados e um DBA</li>
+                    <li>Criar bancos de dados consistentes do ponto de infraestrutura e modelagem</li>
+                    <li>Instalar o Banco de Dados MySql</li>
+                    <li>Executar a linguagem SQL - Structured Query Language, ou Linguagem de Consulta Estruturada em
+                        QUALQUER banco de dados</li>
+                    <li>Entender todo o ambiente trasacional e optar por continuar seus estudos em ambientes analíticos
+                        de Business Intelligence</li>
+                    <li>Instalar o Banco de Dados Oracle</li>
+                    <li>Instalar o Banco de Dados SQL Server</li>
+                    <li>Modelar a base de dados para qualquer sistema transacional</li>
+                    <li>Programar em Banco de Dados</li>
+                    <li>Realizar Backups e Restores dos seus Bancos de Dados</li>
+                    <li>Aplicar Constraints de qualquer natureza em suas tabelas</li>
+                    <li>Aplicar as Formas Normais</li>
+                    <li>Criar Triggers, Procedures, Functions e Views</li>
+                    <li>Escolher as funções nativas de qualquer banco de dados, de acordo com a sua necessidade</li>
+                    <li>Utilizar o Dicionário de Dados</li>
+                    <li>Estar seguro na disciplina Banco de Dados</li>
+                    <li>Realizar downloads de softwares relacionados a banco de dados</li>
+                    <li>Utilizar softwares de modelagem</li>
+                    <li>Aplicar seguramente os relacionamentos 1 x 1 , 1 x N, N x N, Generalização e Autorelacionamento,
+                        entendendo o porquê de cada um.</li>
+                </ul>
+                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="13"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-dark" style="width: 13%;">13%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 06 UX -->
+        <div class="card" style="width: 18rem;">
+            <img src="/logos/google-coursea.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">
+                    <strong>UX</strong>
+                    <br><strong>Google UX Design Community</strong>
+                    <br>Figman
+                </p>
+                <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasUX"
+                    aria-controls="offcanvasUX">Mais informações</button>
+            </div>
+        </div>
+        <!-- 06 Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasUX" aria-labelledby="offcanvasTitle">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasTitle">UX - Detalhes</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h3>Google e coursera</h3>
+                <p><strong>Google UX Design Community</strong></p>
+                <p><strong>O que você aprenderá:</strong></p>
+                <ul>
+                    <li>Objetivos de aprendizagem</li>
+                    <li>Identificar e comparar as disciplinas dentro da UX</li>
+                    <li>Identificar os fatores que contribuem para um excelente design de experiência do usuário</li>
+                    <li>Analise as responsabilidades comuns do trabalho de designers de UX iniciantes</li>
+                    <li>Analise as equipes com as quais os designers de UX costumam trabalhar</li>
+                    <li>Explicar como os trabalhos de designer de UX são influenciados pelo tamanho da empresa e pelo
+                        setor</li>
+                    <li>Explorar as oportunidades de emprego disponíveis após a conclusão deste programa</li>
+                    <li>Definir o campo da UX e explicar sua importância para os consumidores e as empresas.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 06 Power BI -->
+        <div class="card" style="width: 18rem;">
+            <img src="/logos/udemy.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">
+                    <strong>Power BI</strong>
+                    <br><strong>Professor: </strong>André Rosa
+                    <br>Horas: 19,5
+                </p>
+                <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPowerBI"
+                    aria-controls="offcanvasPowerBI">Mais informações</button>
+            </div>
+        </div>
+        <!-- 06 Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasPowerBI" aria-labelledby="offcanvasTitle">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasTitle">Power BI - Detalhes</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h3>Udemy</h3>
+                <p><strong>Power BI</strong></p>
+                <p>
+                    <strong>Professor:</strong> André Rosa
+                    <br>Horas: 19,5
+                </p>
+                <p>
+                    <strong>O Curso completo de Power BI+DAX | Aprenda a criar dashboards interativos, gerar
+                        insights e publicar no PowerBI Service.</strong>
+                </p>
+                <p><strong>Habilidades Desenvolvidas neste curso:</strong></p>
+                <ul>
+                    <li>Preparar os dados</li>
+                    <li>Modelar os dados</li>
+                    <li>Visualizar os dados</li>
+                    <li>Analisar os dados</li>
+                    <li>Implantar e manter resultados</li>
+                    <li>Conectar-se, importar e transformar/modelar os dados de uma série de fontes</li>
+                    <li>Definir regras de negócio e KPIs</li>
+                    <li>Explorar dados com a poderosa ferramentas de visualização o"Power BI"</li>
+                    <li>Criar relatórios impressionantes com Power BI</li>
+                    <li>Compartilhar/Publicar dashboards com suas equipes e seus parceiros de negócios e publicá-los na
+                        Web - Etc.</li>
+                </ul>
+                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="1"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-dark" style="width: 1%;">1%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 07 Arquitetura de Redes -->
+        <div class="card" style="width: 18rem;">
+            <img src="/logos/udemy.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">
+                    <strong>Arquitetura de Redes</strong>
+                    <br><strong>Professor: </strong>André Rosa
+                    <br>Horas: 19,5
+                </p>
+                <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasArquiteturaDeRedes" aria-controls="offcanvasArquiteturaDeRedes">Mais
+                    informações</button>
+            </div>
+        </div>
+        <!-- 07 Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasArquiteturaDeRedes"
+            aria-labelledby="offcanvasTitle">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasTitle">Arquitetura de Redes - Detalhes</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h3>Udemy</h3>
+                <p><strong>Arquitetura de Redes</strong></p>
+                <p>
+                    <strong>Professor:</strong> Gabriel Torres
+                    <br>Horas: 25
+                </p>
+                <p>
+                    <strong>Curso completo de Arquitetura de Redes, onde você aprenderá os fundamentos sobre
+                        funcionamento de redes de computadores.</strong>
+                </p>
+                <p><strong>O que você aprenderá:</strong></p>
+                <ul>
+                    <li>Princípios de funcionamento de redes</li>
+                    <li>Números binários</li>
+                    <li>Transmissão, codificação e modulação de dados</li>
+                    <li>Protocolos de rede, o modelo OSI e a pilha TCP/IP</li>
+                    <li>Topologias de redes, como anel, linear, estrela, sem fio e híbrida</li>
+                    <li>Cabos de rede, como coaxial, par trançado, fibra óptica e cabeamento estruturado</li>
+                    <li>Equipamentos de redes, como hubs, switches, roteadores e balanceadores de carga</li>
+                    <li>Redes Wi-Fi</li>
+                    <li>Redes de telefonia celular</li>
+                    <li>Virtualização</li>
+                    <li>Segurança de redes</li>
+                    <li>Análise de questões de concursos públicos</li>
+                    <li>E muito mais!</li>
+                </ul>
+                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="1"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-dark" style="width: 1%;">1%</div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </section>

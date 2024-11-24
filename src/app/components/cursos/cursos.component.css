@@ -8,15 +8,20 @@ h3 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-h1 {
-    text-align: start;
+h1, 
+.sobre-cursos {
+    text-align: center;
 }
 
 h2 {
     font-size: 24px;
-    text-align: end;
-    margin-top: 20px;
+    text-align: start;
+    margin-top: 40px;
     margin-bottom: 20px;
+}
+
+.h2-em-andamentos {
+    color: rgb(6, 97, 171);
 }
 
 .meus-cursos .container {
