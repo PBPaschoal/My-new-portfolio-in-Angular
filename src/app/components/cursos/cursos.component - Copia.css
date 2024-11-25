@@ -82,14 +82,6 @@ h2 {
     border-color: rgb(19, 19, 238);
 }
 
-.img-offcanvas {
-    width: 100%; /* A imagem ocupará toda a largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    max-width: 100%; /* Garante que não ultrapasse o tamanho do contêiner */
-    display: block; /* Remove espaços extras causados pelo comportamento inline padrão */
-    object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço, se necessário */
-}
-
 /* Cores */
 
 .h2-em-andamentos {
