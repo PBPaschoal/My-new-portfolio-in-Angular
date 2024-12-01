@@ -1,0 +1,13 @@
+section.backend {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+h1 {
+    color: rgb(110, 7, 199);
+}
+
+p {
+    color: rgb(255, 0, 0);
+}

@@ -42,6 +42,10 @@ h2 {
     margin-bottom: 20px;
 }
 
+.concluidos-h2 {
+    padding: 15px;
+}
+
 .meus-cursos .container,
 .cursos-concluidos .container {
     flex-wrap: wrap;
@@ -59,6 +63,9 @@ h2 {
 
 .cursos-concluidos {
     margin-bottom: 50px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding-bottom: 20px;
 }
 
 .button-linkedin-cursos {
@@ -66,14 +73,18 @@ h2 {
 }
 
 .button-linkedin-cursos button {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 5px;
 }
 
 .button-linkedin-cursos button a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
+}
+
+.button-linkedin-cursos button a:hover {
+    color: rgb(255, 255, 255);
 }
 
 .button-linkedin-cursos button:hover {
@@ -88,6 +99,16 @@ h2 {
     max-width: 100%; /* Garante que não ultrapasse o tamanho do contêiner */
     display: block; /* Remove espaços extras causados pelo comportamento inline padrão */
     object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço, se necessário */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    gap: 10px;
+    flex-wrap: nowrap;
 }
 
 /* Cores */
@@ -128,4 +149,14 @@ h3.udemy {
 .cursos-concluidos .btn.btn-dark:hover {
     transition: 0.3s;
     background-color: rgb(25, 135, 84);
+}
+
+/* Media query para telas menores */
+@media (max-width: 740px) {
+    .container {
+        flex-direction: column; /* Alinha os itens em uma coluna */
+        padding: 10px; /* Reduz o espaçamento interno */
+        gap: 5px; /* Reduz o espaçamento entre itens */
+        flex-wrap: wrap;
+    }
 }

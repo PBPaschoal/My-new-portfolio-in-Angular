@@ -9,3 +9,23 @@
 .section-contatos {
     margin: 4%;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+/* Media query para telas menores */
+@media (max-width: 740px) {
+    .container {
+        flex-direction: column; /* Alinha os itens em uma coluna */
+        padding: 10px; /* Reduz o espaçamento interno */
+        gap: 5px; /* Reduz o espaçamento entre itens */
+        flex-wrap: wrap;
+    }
+}

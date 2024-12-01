@@ -4,11 +4,13 @@ body {
     padding: 1%;
 }
 
-header,footer {
+header,
+footer {
     text-align: center;
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/*
 .container {
     display: flex;
     flex-direction: row;
@@ -17,19 +19,19 @@ header,footer {
     text-align: start;
     gap: 10px;
     flex-wrap: nowrap;
-}
+} 
 
 .card a {
     text-decoration: none;
     color: rgb(90, 90, 90);
 }
 
-/* Media query para telas menores */
-@media (max-width: 768px) {
+/* Media query para telas menores 
+/*@media (max-width: 740px) {
     .container {
-        flex-direction: column; /* Alinha os itens em uma coluna */
-        padding: 10px; /* Reduz o espaçamento interno */
-        gap: 5px; /* Reduz o espaçamento entre itens */
+        flex-direction: column; /* Alinha os itens em uma coluna *
+        padding: 10px; /* Reduz o espaçamento interno *
+        gap: 5px; /* Reduz o espaçamento entre itens *
         flex-wrap: wrap;
     }
-}
+}*/
