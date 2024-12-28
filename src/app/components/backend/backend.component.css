@@ -36,13 +36,10 @@ section.backend p {
     object-fit: cover;
 }
 
+h3,
+.mensagem-link,
 .card-text {
     color: rgb(110, 7, 199);
-}
-
-h3,
-.mensagem-link {
-    color: rgb(10, 130, 2);
 }
 
 h5,
@@ -70,6 +67,6 @@ h5,
 
 .link-github button:hover,
 .btn-dark:hover {
-    background-color: rgb(10, 130, 2);
+    background-color: rgb(110, 7, 199);
     transition: 0.6s;
 }
