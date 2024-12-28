@@ -3,11 +3,14 @@ section.experiencia,
 .sobre-paulo-bruno-paschoal .atualizacao {
     text-align: center;
     padding-top: 5%;
-    padding-bottom: 5%;
 }
 
 h1 {
     color: rgb(126, 2, 197);
+}
+
+.sobre-paulo-bruno-paschoal {
+    margin: 30px;
 }
 
 p,

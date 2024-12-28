@@ -9,6 +9,7 @@ import { ExperienciasComponent } from './components/experiencias/experiencias.co
 import { AdmComponent } from './components/adm/adm.component';
 import { TiComponent } from './components/ti/ti.component';
 import { SobreComponent } from './components/sobre/sobre.component';
+import { DesenvolvimentoSoftwareComponent } from './components/desenvolvimento-software/desenvolvimento-software.component';
 
 export const routes: Routes = [
   { path: '', component: PrimeiraSectionComponent },
@@ -21,4 +22,5 @@ export const routes: Routes = [
   { path: 'adm', component: AdmComponent },
   { path: 'ti', component: TiComponent },
   { path: 'sobre', component: SobreComponent },
+  { path: 'desenvolvimento-software', component: DesenvolvimentoSoftwareComponent },
 ];
