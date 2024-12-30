@@ -1,6 +1,6 @@
 <main>
     <section class="outrosprojetos">
-        <h1>Outros Projetos</h1>
+        <h1>Outros</h1>
         <p>Atualização em breve!</p>
 
         <div class="spinner-grow text-warning" style="width: 3rem; height: 3rem;" role="status">
@@ -11,13 +11,13 @@
     <section class="outrosprojetos-section">
         <div>
             <!--<h2>Projetos</h2>-->
-            <p>Aqui estão outros projetos em desenvolvimento de software e scripts:</p>
+            <p>Aqui estão outros programas básicos e scripts:</p>
         </div>
 
         <div class="container">
             <!-- 01 Script NPC Ragnarok -->
             <div class="card" style="width: 18rem;">
-                <img src="projetos/npc-script-ragnarok01.jpeg" class="card-img-top"
+                <img src="projetos/npc-script-ragnarok01.webp" class="card-img-top"
                     alt="Imagem representando o meu sistema de simulação de emprestimo consignado">
                 <div class="card-body">
                     <p class="card-text">
@@ -36,7 +36,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <div><img class="img-offcanvas" src="projetos/npc-script-ragnarok02.jpeg"
+                    <div><img class="img-offcanvas" src="projetos/npc-script-ragnarok02.webp"
                             alt="Imagem representando o meu sistema de simulação de emprestimo consignado"></div>
                     <br>
                     <h3>Meus NPCs para Ragnarok Online RPG MMO - Emulador rAthena</h3>
@@ -56,6 +56,617 @@
                     </div>
                 </div>
             </div>
+            <!-- Até aqui -->
+            <!-- 02 Simulador de emprestimo Consignado - Sexta versão -->
+            <div class="card" style="width: 18rem;">
+                <img src="projetos/javapooemprestimoS01.webp" class="card-img-top"
+                    alt="Imagem representando o meu sistema de simulação de emprestimo consignado">
+                <div class="card-body">
+                    <p class="card-text">
+                        <strong>V6: Empréstimo consignado</strong>
+                    </p>
+                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasSimuladorEmprestimoSx"
+                        aria-controls="offcanvasSimuladorEmprestimoSx">Mais
+                        informações</button>
+                </div>
+            </div>
+            <!-- 02 Simulador de emprestimo Consignado - Sexta versão -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSimuladorEmprestimoSx"
+                aria-labelledby="offcanvasTitle">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasTitle">Simulador de empréstimo consignado - Sexta versão:
+                        Programação Orientada a Objetos
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div><img class="img-offcanvas" src="projetos/javapooemprestimoS02.webp"
+                            alt="Imagem representando o meu sistema de simulação de emprestimo consignado"></div>
+                    <br>
+                    <h3>Java POO | EMPRÉSTIMO</h3>
+                    <p>
+                        Este sistema simula um processo de autenticação e contratação de empréstimos, utilizando
+                        Programação Orientada a Objetos (POO) em Java. O código está organizado em pacotes, classes,
+                        métodos, atributos e encapsulamento, seguindo a estrutura modular para cada parte do processo.
+                        Vou dividir a análise do programa de acordo com os pacotes e classes fornecidos.<br>
+
+                        <br><strong>Estrutura do Programa</strong>
+                        <br>O sistema é composto por três pacotes principais:
+
+                        <br><i>application:</i> Onde a classe principal <i>Simulador</i> executa o fluxo do programa,
+                        interagindo com o
+                        usuário.
+                        <br><i>financas:</i> Contém a classe <i>Contrato</i>, que lida com as operações financeiras do
+                        sistema, como
+                        cálculo de valores de empréstimos e comissões.
+                        <br><i>usuarios:</i> Contém a classe <i>Autenticacao</i>, responsável pela autenticação do
+                        usuário.
+
+                        <br><strong>Pacote</strong> <i>application</i> - <strong>Classe</strong> <i>Simulador</i>
+                        <br>- <strong>Objetivo</strong>: Controla o fluxo principal da aplicação, coordenando o cadastro
+                        de usuários, login e
+                        escolha de operações bancárias e financeiras.
+                        <br>- <strong>Atributos</strong>: Usa instâncias das classes <i>Autenticacao</i> e
+                        <i>Contrato</i>.
+                        <br>- <strong>Métodos</strong>:
+                        <br>- <i>main(String[] args)</i>: Método principal onde ocorre a interação com o usuário.
+                        Primeiramente,
+                        chama o processo de cadastro e login do sistema (via classe <i>Autenticacao</i>), seguido pela
+                        escolha
+                        de bancos e operações financeiras (via classe <i>Contrato</i>).
+                        <br>- <strong>Cadastro Inicial e Login</strong>: Ao executar o programa, o método realiza a
+                        autenticação do usuário e
+                        solicita as credenciais.
+                        <br>- <strong>Seleção de Banco</strong>: Após o login, o usuário escolhe o banco desejado, o
+                        qual é responsável por
+                        ajustar a comissão e o limite de idade para o processo.
+                        <br><strong>Seleção de Operação</strong>: O usuário pode escolher entre realizar um novo
+                        empréstimo ou
+                        refinanciamento de dívida.
+
+                        <br>Pacote <i>financas</i>> - Classe <i>Contrato</i>>
+                        <br>- <strong>Objetivo</strong>: Gerenciar as operações financeiras, como a simulação de
+                        empréstimos, refinanciamentos
+                        e cálculos de comissão de corretor.
+                        <br>- <strong>Atributos</strong>:
+                        <br>- <strong>Informações do cliente</strong>: Atributos como nomeCliente, cpfCliente,
+                        idadeCliente, sexoCliente, etc.
+                        <br>- <strong>Operação financeira</strong>: Atributos relacionados ao valor do empréstimo,
+                        parcela, comissão e prazos.
+                        <br>- <strong>Variáveis de cálculo</strong>: Como porcentagemComissao, fator (para cálculos de
+                        valores de empréstimos),
+                        e valorLiquido.
+                        <br><strong>Métodos</strong>:
+                        <br>- <i>bancoBradesco()</i>, <i>bancoItau()</i>>, etc.: Métodos para selecionar um banco
+                        específico, cada um com sua
+                        comissão e limite de idade para aprovação de crédito.
+                        <br>- <i>DadosDoCliente()</i>: Coleta os dados do cliente necessários para simular um
+                        empréstimo.
+                        <br>- <i>ContratoNovo()</i> e <i>ContratoDeRefinanciamento()</i>: Métodos que simulam a criação
+                        de um novo
+                        empréstimo ou refinanciamento de dívida, onde o usuário escolhe como deseja realizar a operação
+                        (por parcela ou valor do contrato).
+                        <br>- <i>ComissaoCorretor()</i>: Método para calcular a comissão do corretor com base no banco
+                        selecionado e
+                        no valor do empréstimo.
+                        <br>- <i>Resultado()</i>: Exibe os detalhes do contrato simulado, incluindo o valor da parcela,
+                        comissão do
+                        corretor, entre outros.
+
+                        <br><strong>Pacote</strong> <i>usuarios</i>> - <strong>Classe</strong> <i>Autenticacao</i>
+                        <br>- <strong>Objetivo</strong>: Gerenciar o processo de autenticação do usuário, incluindo
+                        cadastro e login.
+                        <br>- <strong>Atributos</strong>:
+                        <br>- <i>nome, usuario, senha</i>: Informações de cadastro do usuário.
+                        <br>- <i>repetirUsuario, repetirSenha</i>: Variáveis temporárias para verificar se os dados de
+                        login
+                        fornecidos estão corretos.
+                        <br>- <i>erros</i>: Contabiliza os erros de login.
+                        <br><strong>Métodos</strong>:
+                        <br>- <i>cadastroInicial()</i>: Realiza o cadastro do usuário (nome, usuário, senha), permitindo
+                        que o
+                        sistema armazene essas informações para autenticação futura.
+                        <br><i>acessarSistema()</i>>: Verifica as credenciais fornecidas pelo usuário. Caso o usuário
+                        erre a senha
+                        mais de 2 vezes, o sistema solicita um novo cadastro.<br>
+
+                        <br><strong>Encapsulamento e Atributos</strong>
+                        <br>O código segue os princípios de encapsulamento ao fornecer métodos getters e setters para os
+                        atributos privados de cada classe. Isso permite que os dados dos objetos sejam acessados e
+                        manipulados de forma controlada e segura. Por exemplo, os atributos de cliente na classe
+                        <i>Contrato (nomeCliente, cpfCliente</i>>, etc.) são acessados por meio dos métodos <i>get</i>>
+                        e <i>set</i>>, mantendo
+                        a integridade dos dados.<br>
+
+                        <br><strong>Interação com o Usuário</strong>
+                        <br>O programa faz uso intenso de <i>Scanner</i>> para capturar a entrada do usuário, seja para
+                        o cadastro,
+                        login ou dados relacionados aos contratos financeiros. O fluxo de interação é simples e
+                        intuitivo, com validações de entrada, como o número máximo de tentativas de login.<br>
+
+                        <br><strong>Em resumo</strong>, o programa simula um processo de cadastro, login e simulação de
+                        empréstimos/refinanciamentos de forma bem estruturada utilizando Programação Orientada a
+                        Objetos. Ele segue a modularização, com diferentes responsabilidades divididas em pacotes e
+                        classes, e emprega o uso de encapsulamento para garantir segurança no acesso aos dados. O fluxo
+                        principal da aplicação começa com o cadastro e autenticação do usuário, segue com a escolha de
+                        um banco e operação financeira, e termina com a simulação de um contrato, incluindo o cálculo de
+                        parcelas, valores liberados e comissão do corretor.
+                    </p>
+                    <div class="link-github">
+                        <button><a
+                                href="https://github.com/PBPaschoal/Java/tree/main/Projetos/Meus%20Projetos/Simulador%20Emprestimo%20Consignado/simulador_consignado_v6/src"
+                                target="_blank">Link
+                                do Projeto no GitHub</a></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Até Aqui -->
+            <!-- 03 Simulador de emprestimo Consignado - Quinta versão -->
+            <div class="card" style="width: 18rem;">
+                <img src="projetos/csharpemprestimoQt01.webp" class="card-img-top"
+                    alt="Imagem representando o meu sistema de simulação de emprestimo consignado">
+                <div class="card-body">
+                    <p class="card-text">
+                        <strong>V5: Empréstimo consignado</strong>
+                    </p>
+                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasSimuladorEmprestimoQt"
+                        aria-controls="offcanvasSimuladorEmprestimoQt">Mais
+                        informações</button>
+                </div>
+            </div>
+            <!-- 03 Simulador de emprestimo Consignado - Quinta versão -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSimuladorEmprestimoQt"
+                aria-labelledby="offcanvasTitle">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasTitle">Simulador de empréstimo consignado - Quinta versão
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div><img class="img-offcanvas" src="projetos/csharpemprestimoQt02.webp"
+                            alt="Imagem representando o meu sistema de simulação de emprestimo consignado"></div>
+                    <br>
+                    <h3>C# | EMPRÉSTIMO</h3>
+                    <p>
+                        O programa implementa um sistema de cadastramento e simulação de empréstimos consignados e
+                        refinanciamentos, com controle de usuário e senha, além de verificações de requisitos mínimos
+                        para cada operação.<br>
+
+                        <strong>1.Cadastro e Autenticação:</strong>
+
+                        <br>- O programa começa com o cadastro de um usuário e senha.
+                        <br>- O usuário precisa fazer login para acessar o sistema. Se o login for bem-sucedido, o
+                        programa
+                        prossegue.<br>
+
+                        <strong>2.Cadastro de Operações:</strong>
+
+                        <br>- O usuário é solicitado a inserir a quantidade de operações que deseja cadastrar.
+                        <br>- Para cada operação, o programa solicita informações sobre o banco, data (dia e mês) e a
+                        escolha
+                        do órgão (INSS, SIAPE ou Exército).
+                        <br>- A comissão para cada órgão pode ser personalizada pelo usuário.<br>
+
+                        <strong>3.Opções de Operação:</strong>
+
+                        <br>- O usuário escolhe entre dois tipos de operação: Nova operação ou Refinanciamento.
+
+                        <br>- <strong>Nova operação:</strong>
+
+                        <br>- O usuário fornece os dados do cliente (nome, CPF, valor bruto, valor da parcela e prazo).
+                        <br>- Dependendo do valor bruto informado e do órgão escolhido, o sistema verifica se o valor
+                        está
+                        abaixo do mínimo permitido. Caso esteja, a operação é negada. Caso contrário, são apresentados
+                        os detalhes da operação e a comissão a ser paga.
+
+                        <br>- <strong>Refinanciamento:</strong>
+
+                        <br>- O processo é similar à nova operação, mas inclui o valor do saldo devedor.
+                        <br>- O valor liberado é calculado subtraindo o saldo devedor do valor bruto.
+                        <br>- Novamente, o programa verifica se o valor liberado está abaixo do mínimo exigido por
+                        órgão,
+                        negando a operação, caso necessário.<br>
+
+                        <strong>4.Verificação de Requisitos:</strong>
+
+                        <br>- Para cada tipo de operação (nova ou refinanciamento), o programa verifica se o valor
+                        informado
+                        (bruto ou liberado) atende ao mínimo permitido para o órgão selecionado:
+                        <br>- <strong>INSS</strong>: Mínimo de R$ 500 para nova operação e R$ 300 para refinanciamento.
+                        <br>- <strong>SIAPE</strong>: Mínimo de R$ 850 para nova operação e R$ 400 para refinanciamento.
+                        <br>- <strong>Exército</strong>: Mínimo de R$ 1.000 para nova operação e R$ 500 para
+                        refinanciamento.
+
+                        <strong>5.Repetição de Cadastro:</strong>
+
+                        <br>- O programa usa um <strong>laço de repetição</strong> (for) para permitir que o usuário
+                        cadastre várias operações
+                        de uma vez, conforme a quantidade definida no início.<br>
+
+                        <strong>Resultado:</strong>
+
+                        <br>- Caso os requisitos sejam atendidos, o programa exibe os detalhes da operação, incluindo o
+                        valor
+                        da comissão, o valor bruto, as parcelas e o prazo.<br>
+
+                        <strong>Encerramento:</strong>
+
+                        <br>- Ao final do processo, o programa exibe uma mensagem de encerramento e aguarda uma ação do
+                        usuário para finalizar.<br>
+
+                        <br>Essa versão do programa se destaca pela introdução do controle de autenticação, permitindo
+                        que
+                        apenas usuários cadastrados possam acessar as funcionalidades. Além disso, o uso da estrutura de
+                        repetição permite que múltiplas operações sejam cadastradas de forma eficiente.
+                    </p>
+                    <div class="link-github">
+                        <button><a
+                                href="https://github.com/PBPaschoal/CSharp/blob/main/Estudos%20Antigos/B%C3%A1sico/ConsigConsultaProgram%2003/ConsigConsultaProgram/ConsigConsulta03.cs"
+                                target="_blank">Link
+                                do Projeto no GitHub</a></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Até Aqui -->
+            <!-- 04 Simulador de emprestimo Consignado - Quarta versão -->
+            <div class="card" style="width: 18rem;">
+                <img src="projetos/csharpemprestimoQ01.webp" class="card-img-top"
+                    alt="Imagem representando o meu sistema de simulação de emprestimo consignado">
+                <div class="card-body">
+                    <p class="card-text">
+                        <strong>V4: Empréstimo consignado</strong>
+                    </p>
+                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasSimuladorEmprestimoQ"
+                        aria-controls="offcanvasSimuladorEmprestimoQ">Mais
+                        informações</button>
+                </div>
+            </div>
+            <!-- 04 Simulador de emprestimo Consignado - Quarta versão -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSimuladorEmprestimoQ"
+                aria-labelledby="offcanvasTitle">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasTitle">Simulador de empréstimo consignado - Quarta versão
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div><img class="img-offcanvas" src="projetos/csharpemprestimoQ02.webp"
+                            alt="Imagem representando o meu sistema de simulação de emprestimo consignado"></div>
+                    <br>
+                    <h3>C# | EMPRÉSTIMO</h3>
+                    <p>
+                        Esta é a quarta versão do simulador de empréstimo consignado, agora implementada em C#. O
+                        programa segue a mesma lógica das versões anteriores, mas foi adaptado para a linguagem C#. Ele
+                        permite ao usuário selecionar um órgão (INSS, SIAPE ou Exército), definir o tipo de operação
+                        (novo empréstimo ou refinanciamento) e inserir dados como nome, CPF, valor bruto, saldo, parcela
+                        e prazo. O sistema então calcula a comissão com base na porcentagem associada ao órgão e
+                        operação escolhidos, e exibe os resultados ao usuário.<br>
+
+                        <br><strong>Principais Características e Funcionalidade:</strong><br>
+
+                        <br><strong>1.Entrada de Dados:</strong> O programa começa solicitando ao usuário que escolha um
+                        órgão para o
+                        cadastramento (INSS, SIAPE ou Exército). Em seguida, o usuário deve selecionar o tipo de
+                        operação (novo ou refinanciamento) e fornecer dados como nome, CPF, valor bruto do empréstimo,
+                        saldo, valor da parcela e o prazo.<br>
+
+                        <br><strong>2.Estrutura de Controle (Switch e If/Else):</strong>
+
+                        <br>- <strong>Switch:</strong> O switch é usado para determinar a porcentagem de comissão com
+                        base na escolha do órgão
+                        (INSS, SIAPE ou Exército).
+                        <br>- <strong>If/Else:</strong> A estrutura if/else é utilizada para diferenciar o processo de
+                        cadastramento entre um
+                        novo empréstimo ou um refinanciamento. Para cada tipo de operação, o programa coleta as
+                        informações necessárias e calcula o valor da comissão correspondente.
+
+                        <br><strong>3.Cálculo da Comissão:</strong>
+
+                        <br>- <strong>Novo Empréstimo:</strong> Para um novo empréstimo, o programa calcula a comissão
+                        com base no valor bruto
+                        e na porcentagem do órgão. A comissão é apresentada ao usuário com duas casas decimais.
+                        <br>- <strong>Refinanciamento:</strong> Para refinanciamentos, além dos dados de valor bruto e
+                        parcela, o programa
+                        solicita o saldo restante. O valor liberado (valor bruto - saldo) é calculado, e a comissão é
+                        ajustada com um desconto de 3%, refletindo uma porcentagem menor para refinanciamentos. O valor
+                        da comissão é calculado e exibido com duas casas decimais.
+
+                        <br><strong>4.Saída de Dados:</strong> O programa exibe todas as informações inseridas pelo
+                        usuário, incluindo nome do
+                        cliente, CPF, valor bruto, valor do saldo (para refinanciamentos), valor liberado, valor da
+                        parcela, prazo e a comissão calculada. Tudo é formatado para exibição com duas casas decimais,
+                        utilizando a cultura "InvariantCulture" para garantir a consistência na formatação de
+                        números.<br>
+
+                        <br><strong>Comparação com as Versões Anteriores (C++, Java):</strong><br>
+
+                        <br>- <strong>Linguagem C#:</strong> A versão em C# segue a mesma lógica básica das versões em
+                        C++ e Java, mas com
+                        adaptações para a sintaxe e características da linguagem C#. A principal diferença é o uso da
+                        biblioteca System para entrada e saída de dados, e a formatação numérica específica com
+                        CultureInfo.InvariantCulture.
+
+                        <br>- <strong>Entrada e Saída:</strong> A entrada de dados é feita por meio de
+                        Console.ReadLine() e a saída é realizada
+                        com Console.WriteLine(), características típicas de C#. A formatação de números, especialmente
+                        para exibir o valor da comissão com duas casas decimais, é feita com o método ToString("F2",
+                        CultureInfo.InvariantCulture).
+
+                        <br>- <strong>Controle de Fluxo:</strong> O programa mantém a estrutura de controle de fluxo
+                        semelhante às versões
+                        anteriores, com um switch para selecionar o órgão e if/else para diferenciar as operações de
+                        novo empréstimo e refinanciamento.
+
+                        <br>- <strong>Comissão e Cálculos:</strong> O cálculo da comissão continua o mesmo, com a
+                        comissão sendo calculada de
+                        acordo com a porcentagem do órgão, com um ajuste de 3% para refinanciamentos. O uso de variáveis
+                        como double para armazenar valores numéricos permite cálculos precisos.<br>
+
+                        <br><strong>Conclusão:</strong> Esta versão em C# do simulador de empréstimo consignado mantém a
+                        funcionalidade
+                        central das versões anteriores, com melhorias na formatação e a utilização de funcionalidades
+                        específicas da linguagem C#. Ela é simples e eficaz para prática dos conceitos básicos da
+                        programação, como estruturas de controle (switch, if/else), manipulação de entradas e saídas de
+                        dados e formatação de números.
+                    </p>
+                    <div class="link-github">
+                        <button><a
+                                href="https://github.com/PBPaschoal/CSharp/blob/main/Estudos%20Antigos/B%C3%A1sico/ConsigConsulta.cs"
+                                target="_blank">Link
+                                do Projeto no GitHub</a></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Até aqui -->
+            <!-- 05 Simulador de emprestimo Consignado - Terceira versão -->
+            <div class="card" style="width: 18rem;">
+                <img src="projetos/javav3emprestimoT01.webp" class="card-img-top"
+                    alt="Imagem representando o meu sistema de simulação de emprestimo consignado">
+                <div class="card-body">
+                    <p class="card-text">
+                        <strong>V3: Empréstimo consignado</strong>
+                    </p>
+                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasSimuladorEmprestimoT"
+                        aria-controls="offcanvasSimuladorEmprestimoT">Mais
+                        informações</button>
+                </div>
+            </div>
+            <!-- 05 Simulador de emprestimo Consignado - Terceira versão -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSimuladorEmprestimoT"
+                aria-labelledby="offcanvasTitle">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasTitle">Simulador de empréstimo consignado - Terceira versão
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div><img class="img-offcanvas" src="projetos/javav3emprestimoT02.webp"
+                            alt="Imagem representando o meu sistema de simulação de emprestimo consignado"></div>
+                    <br>
+                    <h3>Java | EMPRÉSTIMO</h3>
+                    <p>
+                        Esta é a terceira versão do simulador de empréstimo consignado, agora implementada em Java. O
+                        funcionamento do programa é muito similar às versões anteriores, mas adaptado para a sintaxe e
+                        estrutura do Java. O usuário seleciona o órgão (INSS, SIAPE ou Exército) e o tipo de operação
+                        (novo empréstimo ou refinanciamento), insere informações como nome, CPF, valor bruto, saldo,
+                        parcela e prazo. O sistema então calcula e exibe o valor da comissão com base na porcentagem
+                        definida para o órgão e operação.<br>
+
+                        <br><strong>Principais Características e Funcionamento:</strong><br>
+
+                        <br><strong>1.Entrada de Dados:</strong> O programa utiliza a classe Scanner para capturar a
+                        entrada do usuário. O
+                        código solicita ao usuário a escolha do órgão (INSS, SIAPE ou Exército) e, em seguida, o tipo de
+                        operação (novo ou refinanciamento). A seguir, o programa coleta os dados necessários como nome,
+                        CPF, valor bruto, saldo, parcela e prazo.<br>
+
+                        <br><strong>2.Estrutura de Seleção (Switch/Case):</strong> Assim como na versão em C++, o código
+                        usa o switch para
+                        determinar o órgão selecionado, atribuindo a porcentagem da comissão correspondente a cada opção
+                        (INSS, SIAPE ou Exército).<br>
+
+                        <br><strong>3.Operações Diferenciadas:</strong><br>
+
+                        - <strong>Novo Empréstimo:</strong> Para operações novas, o programa solicita informações sobre
+                        o valor bruto,
+                        parcela e prazo e, em seguida, calcula o valor da comissão com base na porcentagem do órgão
+                        escolhido.
+                        <br>- <strong>Refinanciamento:</strong> Para operações de refinanciamento, além dos dados de
+                        valor bruto e parcela, o
+                        programa também solicita o saldo restante e calcula o valor liberado (valor bruto menos o
+                        saldo). A comissão é reduzida em 3% para refinanciamentos e o valor da comissão é recalculado
+                        com base no valor liberado.<br>
+
+                        <br><strong>4.Saída de Dados:</strong> O programa exibe os resultados da proposta, incluindo o
+                        nome do cliente, CPF,
+                        valor bruto, parcela, prazo e o valor da comissão, tanto para empréstimos novos quanto
+                        refinanciamentos.<br>
+
+                        <br><strong>Comparação com as versões anteriores (C++):</strong><br>
+
+                        <br><strong>- Linguagem:</strong> Esta versão foi reescrita em Java, o que significa que a
+                        estrutura e sintaxe foram
+                        adaptadas para o estilo de programação dessa linguagem. A lógica geral do programa é bastante
+                        similar às versões anteriores, com pequenas diferenças na forma como os dados são manipulados e
+                        impressos.
+
+                        <br><strong>- Entrada e Saída:</strong> Na versão em C++, a entrada de dados era realizada via
+                        cin e a saída via cout.
+                        Já em Java, a entrada é feita com Scanner, e a saída utiliza System.out.println, que é o método
+                        padrão para imprimir no console em Java.
+
+                        <br><strong>- Controle de Fluxo:</strong> Assim como na versão em C++, esta versão também usa
+                        switch para selecionar o
+                        órgão e if/else para determinar o tipo de operação. A lógica do controle de fluxo é praticamente
+                        a mesma, mas a sintaxe do switch e if/else em Java é ligeiramente diferente.
+
+                        <br><strong>- Cálculo da Comissão:</strong> O cálculo da comissão em ambas as versões é o mesmo.
+                        Para refinanciamento,
+                        a comissão sofre um desconto de 3%, e o cálculo é ajustado para refletir isso.
+
+                        <br><strong>- Organização e Legibilidade:</strong> Embora a lógica de ambas as versões seja
+                        muito parecida, a versão em
+                        Java possui uma estrutura mais organizada em termos de uso de classes, pacotes e importações
+                        (como a importação da classe Scanner). A linguagem Java também exige mais atenção com os tipos
+                        de dados e declarações de variáveis (por exemplo, as variáveis String e int precisam ser
+                        explicitamente declaradas).<br>
+
+                        <br><strong>Conclusão:</strong> Esta versão em Java mantém o funcionamento do simulador de
+                        empréstimo consignado
+                        similar ao que foi feito nas versões anteriores, com o uso de switch, if/else e cálculos de
+                        comissão. Porém, ela é mais adequada ao estilo de programação em Java, com um controle de fluxo
+                        mais estruturado e entradas/saídas específicas para a linguagem.
+                    </p>
+                    <div class="link-github">
+                        <button><a
+                                href="https://github.com/PBPaschoal/Java/blob/main/Udemy/Antigo/Inicio%20Java/ConsigConsulta.java"
+                                target="_blank">Link
+                                do Projeto no GitHub</a></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Até aqui -->
+            <!-- 06 Simulador de emprestimo Consignado - Segunda versão -->
+            <div class="card" style="width: 18rem;">
+                <img src="projetos/cplusplusemprestimoS01.webp" class="card-img-top"
+                    alt="Imagem representando o meu sistema de simulação de emprestimo consignado">
+                <div class="card-body">
+                    <p class="card-text">
+                        <strong>V2: Empréstimo consignado</strong>
+                    </p>
+                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasSimuladorEmprestimoS"
+                        aria-controls="offcanvasSimuladorEmprestimoS">Mais
+                        informações</button>
+                </div>
+            </div>
+            <!-- 06 Simulador de emprestimo Consignado - Segunda versão -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSimuladorEmprestimoS"
+                aria-labelledby="offcanvasTitle">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasTitle">Simulador de empréstimo consignado - Segunda versão
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div><img class="img-offcanvas" src="projetos/cplusplusemprestimoS02.webp"
+                            alt="Imagem representando o meu sistema de simulação de emprestimo consignado"></div>
+                    <br>
+                    <h3>C++ | EMPRÉSTIMO</h3>
+                    <p>
+                        Esta é a segunda versão do simulador de empréstimo consignado, desenvolvida para otimizar o
+                        código da primeira versão. Embora o funcionamento geral permaneça o mesmo, a versão 2 do
+                        programa introduz melhorias de simplificação e eficiência. O programa ainda permite ao usuário
+                        selecionar o órgão (INSS, SIAPE ou Exército), escolher o tipo de operação (novo empréstimo ou
+                        refinanciamento) e, em seguida, inserir dados como nome, CPF, valor bruto, saldo, parcela e
+                        prazo. Com esses dados, o sistema calcula e exibe o valor da comissão de acordo com a
+                        porcentagem atribuída a cada órgão e operação.<br>
+
+                        <br><strong>Principais mudanças e melhorias:</strong><br>
+
+                        <br>1.Uso de switch no lugar de if/else: A seleção do órgão foi otimizada utilizando um switch
+                        para
+                        evitar múltiplos testes condicionais. Isso simplifica o código e facilita a manutenção e
+                        expansão futura.
+                        <br>2.Código mais compacto: O programa foi reduzido em termos de número de linhas, eliminando
+                        redundâncias, mas mantendo a mesma funcionalidade.
+                        <br>3.Cálculo de comissão: O cálculo da comissão para o refinanciamento foi ajustado, diminuindo
+                        o
+                        valor da comissão em 3% em relação à comissão para um empréstimo novo. Isso foi incorporado
+                        diretamente no cálculo, tornando o código mais conciso.
+                        <br>4.Estrutura de repetição e clareza: O código foi organizado para ser mais direto e claro,
+                        além de
+                        melhorar a legibilidade e organização.<br>
+
+                        <br><strong>Comparação com a versão anterior:</strong><br>
+
+                        <br>- Estrutura de código: A versão anterior usa uma série de if/else para selecionar o órgão e
+                        calcular a comissão, o que pode ser menos eficiente e mais difícil de expandir. Na versão 2, o
+                        uso do switch tornou o código mais limpo e eficiente para a seleção do órgão.
+                        <br>- Redução de código: A versão 2 tem menos linhas e é mais compacta. Ela mantém a lógica de
+                        operação, mas com menos repetição de código, resultando em um código mais conciso e fácil de
+                        entender.
+                        <br>- Simplificação do cálculo da comissão: Na versão anterior, o cálculo da comissão era um
+                        pouco
+                        mais direto, mas a versão 2 ajusta o valor da comissão para refinanciamentos com um desconto de
+                        3%, o que reflete um novo ajuste lógico e torna o código mais adaptável.
+                        <br>- Interface e interação: Ambas as versões oferecem a mesma interação com o usuário, mas a
+                        versão 2
+                        mantém as funcionalidades, com um código mais simplificado e de mais fácil manutenção.<br>
+
+                        <br>Essa versão é uma melhoria significativa em relação à anterior, destacando-se pela
+                        simplificação
+                        do código e pela eficiência na estruturação, tornando-o mais legível e pronto para evoluções
+                        futuras.
+                    </p>
+                    <div class="link-github">
+                        <button><a
+                                href="https://github.com/PBPaschoal/CPlusPlus/blob/master/NovaVersaoProgrammingConsig"
+                                target="_blank">Link
+                                do Projeto no GitHub</a></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Até aqui -->
+            <!-- 07 Simulador de emprestimo Consignado - Primeira versão -->
+            <div class="card" style="width: 18rem;">
+                <img src="projetos/cplusplusemprestimoP01.webp" class="card-img-top"
+                    alt="Imagem representando o meu sistema de simulação de emprestimo consignado">
+                <div class="card-body">
+                    <p class="card-text">
+                        <strong>V1: Empréstimo consignado</strong>
+                    </p>
+                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasSimuladorEmprestimoP"
+                        aria-controls="offcanvasSimuladorEmprestimoP">Mais
+                        informações</button>
+                </div>
+            </div>
+            <!-- 07 Simulador de emprestimo Consignado - Primeira versão -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSimuladorEmprestimoP"
+                aria-labelledby="offcanvasTitle">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasTitle">Simulador de empréstimo consignado - Primeira versão
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div><img class="img-offcanvas" src="projetos/cplusplusemprestimoP02.webp"
+                            alt="Imagem representando o meu sistema de simulação de emprestimo consignado"></div>
+                    <br>
+                    <h3>C++ |EMPRÉSTIMO</h3>
+                    <p>
+                        Este código em C++ é um simulador de empréstimo consignado, desenvolvido para praticar lógica de
+                        programação com o uso de estruturas condicionais (if/else). O programa permite ao usuário
+                        escolher um órgão para o cadastramento (INSS, SIAPE ou Exército) e, em seguida, selecionar o
+                        tipo de operação (novo empréstimo ou refinanciamento). Após o preenchimento dos dados do
+                        cliente, como nome, CPF, valor bruto, valor da parcela, saldo e prazo, o programa calcula e
+                        exibe o valor da comissão a ser recebida, de acordo com a porcentagem estipulada para cada órgão
+                        e operação. O código também lida com o valor liberado para refinanciamentos e limpa a tela entre
+                        os passos para uma melhor visualização dos resultados.<br>
+
+                        <br><strong>Destaques:</strong><br>
+
+                        <br>- Estrutura de menus com opções interativas.
+                        <br>- Cálculos automáticos da comissão e valor liberado para refinanciamentos.
+                        <br>- Uso de variáveis para armazenar dados do cliente e cálculos financeiros.
+                        <br>- Implementação de lógica de controle de fluxo com if/else para diferentes opções de
+                        operação.<br>
+                        <br>Este projeto demonstra habilidades básicas em C++ e pode ser expandido com a adição de mais
+                        funcionalidades, como validação de entradas e aprimoramento da interface de usuário.
+                    </p>
+                    <div class="link-github">
+                        <button><a href="https://github.com/PBPaschoal/CPlusPlus/blob/master/ProgrammingConsig.cpp"
+                                target="_blank">Link
+                                do Projeto no GitHub</a></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Até aqui -->
         </div>
     </section>
 </main>
