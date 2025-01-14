@@ -1,4 +1,4 @@
-section.experiencia {
+section.experiencia-informativo {
     text-align: center;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -8,6 +8,74 @@ h1 {
     color: rgb(4, 161, 7);
 }
 
+h2 {
+    color: rgb(20, 75, 224);
+}
+
 p {
     color: rgb(255, 0, 0);
+}
+
+.experiencias {
+    color: rgb(22, 22, 22);
+    padding-bottom: 50px;
+}
+
+.experiencias p {
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.img-offcanvas {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+h3,
+.mensagem-link,
+.card-text strong {
+    color: rgb(110, 7, 199);
+}
+
+h5,
+.observacao {
+    color: rgb(22, 22, 22);
+}
+
+.offcanvas-body p {
+    text-align: justify;
+}
+
+.periodo {
+    color: rgb(77, 77, 77);
+}
+
+.download-btn {
+    margin-top: 5px;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.download-btn:hover {
+    background-color: rgb(77, 77, 77);
+    /* Cor ao passar o mouse */
 }
