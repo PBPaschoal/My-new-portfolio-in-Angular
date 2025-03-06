@@ -79,3 +79,8 @@ h5,
     background-color: rgb(77, 77, 77);
     /* Cor ao passar o mouse */
 }
+
+.adm {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
