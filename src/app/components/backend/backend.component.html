@@ -45,8 +45,10 @@
 
                         <br><strong>Funcionalidades:</strong><br>
                         - <i>Adicionar itens:</i> Endpoint <strong>POST /items/</strong> para adicionar novos itens.<br>
-                        - <i>Listar itens:</i> Endpoint <strong>GET /items/</strong> para visualizar todos os itens cadastrados.<br>
-                        - <i>Deletar itens:</i> Endpoint <strong>DELETE /items/{{ '{' }}item_id{{ '}' }}</strong> para remover itens pelo índice.<br>
+                        - <i>Listar itens:</i> Endpoint <strong>GET /items/</strong> para visualizar todos os itens
+                        cadastrados.<br>
+                        - <i>Deletar itens:</i> Endpoint <strong>DELETE /items/{{ '{' }}item_id{{ '}' }}</strong> para
+                        remover itens pelo índice.<br>
                         - <i>Página inicial:</i> Endpoint <strong>GET /</strong> com uma mensagem de boas-vindas.<br>
                         <strong>Tecnologias Utilizadas:</strong><br>
                         - <i>Linguagem:</i> Python<br>
@@ -202,6 +204,144 @@
                     </p>
                     <div class="link-github">
                         <button><a href="https://github.com/PBPaschoal/Jogo-anos-70" target="_blank">Link do Projeto no
+                                GitHub</a></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Até Aqui -->
+            <!-- 05 CRUD Simples em C# -->
+            <div class="card" style="width: 18rem;">
+                <img src="projetos/projetocrudcsharp01.webp" class="card-img-top" alt="Imagem representando o meu jogo">
+                <div class="card-body">
+                    <p class="card-text">
+                        <strong>CRUD Simples em C#</strong>
+                    </p>
+                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasCrudCSharp" aria-controls="offcanvasCrudCSharp">Mais
+                        informações</button>
+                </div>
+            </div>
+            <!-- 05 CRUD Simples em C# -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCrudCSharp"
+                aria-labelledby="offcanvasTitle">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasTitle">C#</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div><img class="img-offcanvas" src="projetos/projetocrudcsharp02.webp"
+                            alt="Imagem representando o meu jogo"></div>
+                    <br>
+                    <h3>📝Descrição</h3>
+                    <p>
+                        Este projeto consiste na implementação de um CRUD (Create, Read, Update, Delete) simples nas
+                        linguagens C# e Java, utilizando aplicações de console para reforçar conceitos fundamentais de
+                        programação estruturada e manipulação de dados em listas.<br>
+
+                        <br>O projeto foi desenvolvido com o objetivo de aprimorar meu conhecimento em lógica de
+                        programação, estruturas de controle e manipulação de coleções em ambas as linguagens. A ideia
+                        surgiu como um desafio de aprendizado, com suporte e orientação de um assistente de IA, me
+                        permitindo estruturar melhor o código e compreender boas práticas.<br>
+                    </p>
+                    <h3>⚙ Como Funciona</h3>
+                    <p>
+                        O programa permite gerenciar uma lista de usuários, realizando as seguintes operações:<br>
+
+                        <br>✅ Criar → Adicionar um novo usuário à lista
+                        <br>✅ Ler → Exibir todos os usuários cadastrados
+                        <br>✅ Atualizar → Modificar o nome de um usuário existente
+                        <br>✅ Deletar → Remover um usuário da lista<br>
+
+                        <br>Cada operação é feita através de um menu interativo que o usuário pode navegar digitando a
+                        opção
+                        desejada.
+                    </p>
+                    <h3>🖥 Tecnologias Utilizadas</h3>
+                    <p>
+                        <br>🔹 C# (.NET 6+) – Desenvolvido no Visual Studio 2022
+                        <br>🔹 Listas Dinâmicas – List&lt;string&gt; em C#
+                        <br>🔹 Entrada e saída de dados via console
+                    </p>
+                    <h3>📌 O que Aprendi com Este Projeto</h3>
+                    <p>
+                        <br>💡 Refinei o entendimento sobre CRUD e sua aplicação prática, não apenas em banco de dados,
+                        mas
+                        também na manipulação de coleções em memória.
+                        <br>💡 Pratiquei estruturas de controle como loops e condicionais, fundamentais para manipulação
+                        de
+                        dados.
+                        <br>💡 Comparei a sintaxe e as diferenças entre C# e Java, aprofundando meu conhecimento em
+                        ambas as
+                        linguagens.
+                        <br>💡 Melhorei minha organização de código, estruturando melhor funções para cada operação do
+                        CRUD
+                    </p>
+                    <h3>🔗 Próximos Passos</h3>
+                    <p>
+                        <br>➡ Implementar persistência de dados com um banco de dados SQL (SQLite, MySQL, PostgreSQL).
+                        <br>➡ Criar uma interface gráfica para tornar o projeto mais intuitivo.
+                        <br>➡ Desenvolver uma API REST para o CRUD e consumir os dados em um frontend.
+                    </p>
+                    <!-- Accordion -->
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    Explicação do Código (C#)
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    1️⃣ <code>using System;</code> e <code>using System.Collections.Generic;</code><br>
+                                    🔹 <code>System</code> → Permite usar funções do C# como <code>Console.WriteLine()</code>.<br>
+                                    🔹 <code>System.Collections.Generic</code> → Necessário para usar a <code>List&lt;string&gt;</code>, que é uma lista dinâmica.<br>
+                                    
+                                    2️⃣ <code>static List&lt;string&gt; usuarios = new List&lt;string&gt;();</code><br>
+                                    🔹 Cria uma lista de strings chamada <code>usuarios</code> para armazenar os nomes dos usuários.<br>
+                                    🔹 A lista é dinâmica, ou seja, podemos adicionar e remover elementos.<br>
+                    
+                                    3️⃣ <code>static void Main()</code><br>
+                                    🔹 É o ponto de entrada do programa, onde começa a execução.<br>
+                                    🔹 Possui um <code>while (true)</code> que mantém o programa rodando até o usuário escolher sair.<br>
+                    
+                                    4️⃣ Estrutura de menu com <code>switch-case</code><br>
+                                    🔹 Exibe opções para o usuário e lê a entrada do console (<code>Console.ReadLine()</code>).<br>
+                                    🔹 Compara a opção digitada e chama a função correspondente (<code>CriarUsuario()</code>, <code>ListarUsuarios()</code>, etc.).<br>
+                                    🔹 Caso escolha <code>5</code>, o programa encerra.<br>
+                    
+                                    5️⃣ <code>static void CriarUsuario()</code><br>
+                                    🔹 Pede um nome e adiciona na lista <code>usuarios.Add(nome)</code>.<br>
+                                    🔹 Exibe uma mensagem confirmando.<br>
+                    
+                                    6️⃣ <code>static void ListarUsuarios()</code><br>
+                                    🔹 Se a lista estiver vazia, exibe uma mensagem.<br>
+                                    🔹 Caso contrário, percorre a lista com um <code>for</code> e exibe os usuários.<br>
+                    
+                                    7️⃣ <code>static void AtualizarUsuario()</code><br>
+                                    🔹 Chama <code>ListarUsuarios()</code> para mostrar os usuários.<br>
+                                    🔹 Pede ao usuário que informe o número do usuário a ser atualizado.<br>
+                                    🔹 Usa <code>int.TryParse(Console.ReadLine(), out int index)</code> para converter a entrada em número.<br>
+                                    🔹 Se o número for válido, substitui o nome antigo pelo novo: <code>usuarios[index - 1] = novoNome</code>.<br>
+                    
+                                    8️⃣ <code>static void DeletarUsuario()</code><br>
+                                    🔹 Chama <code>ListarUsuarios()</code> para mostrar os usuários.<br>
+                                    🔹 Pede ao usuário que informe o número do usuário a ser removido.<br>
+                                    🔹 Se o número for válido, usa <code>usuarios.RemoveAt(index - 1)</code> para deletar o item.<br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <!-- Fim Accordion -->
+                    <p>
+                        <!--Data: <time datetime="2025-03-20">20/03/2025.</time><br>-->
+                        <br>Status atual: Concluído<br>
+                        <strong class="mensagem-link">Veja o meu README e projeto abaixo:</strong>
+                    </p>
+                    <div class="link-github">
+                        <button><a href="https://github.com/PBPaschoal/CSharp/tree/main/ChatGPT/Projetos/CrudUsuarios"
+                                target="_blank">Link do Projeto no
                                 GitHub</a></button>
                     </div>
                 </div>

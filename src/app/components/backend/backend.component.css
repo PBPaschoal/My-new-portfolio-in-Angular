@@ -69,3 +69,11 @@ h5,
     background-color: rgb(110, 7, 199);
     transition: 0.6s;
 }
+
+.accordion-header button {
+    background-color: rgb(110, 7, 199);
+}
+
+.accordion-header button {
+    color: rgb(255, 255, 255);
+}
