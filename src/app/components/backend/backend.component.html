@@ -183,7 +183,7 @@
                     <div><img class="img-offcanvas" src="projetos/projetocrudjava02.webp"
                             alt="Imagem representando o meu jogo"></div>
                     <br>
-                    <h3>📝Descrição</h3>
+                    <h3 class="javacrud">📝Descrição</h3>
                     <p>
                         Este projeto consiste na implementação de um CRUD (Create, Read, Update, Delete) simples nas
                         linguagens C# e Java, utilizando aplicações de console para reforçar conceitos fundamentais de
@@ -194,7 +194,7 @@
                         surgiu como um desafio de aprendizado, com suporte e orientação de um assistente de IA, me
                         permitindo estruturar melhor o código e compreender boas práticas.<br>
                     </p>
-                    <h3>⚙ Como Funciona</h3>
+                    <h3 class="javacrud">⚙ Como Funciona</h3>
                     <p>
                         O programa permite gerenciar uma lista de usuários, realizando as seguintes operações:<br>
 
@@ -207,13 +207,13 @@
                         opção
                         desejada.
                     </p>
-                    <h3>🖥 Tecnologias Utilizadas</h3>
+                    <h3 class="javacrud">🖥 Tecnologias Utilizadas</h3>
                     <p>
                         <br>🔹 Java (JDK 17+) – Desenvolvido no Eclipse
                         <br>🔹 Listas Dinâmicas – ArrayList&lt;String&gt; em Java
                         <br>🔹 Entrada e saída de dados via console
                     </p>
-                    <h3>📌 O que Aprendi com Este Projeto</h3>
+                    <h3 class="javacrud">📌 O que Aprendi com Este Projeto</h3>
                     <p>
                         <br>💡 Refinei o entendimento sobre CRUD e sua aplicação prática, não apenas em banco de dados,
                         mas
@@ -227,7 +227,7 @@
                         <br>💡 Melhorei minha organização de código, estruturando melhor funções para cada operação do
                         CRUD
                     </p>
-                    <h3>🔗 Próximos Passos</h3>
+                    <h3 class="javacrud">🔗 Próximos Passos</h3>
                     <p>
                         <br>➡ Implementar persistência de dados com um banco de dados SQL (SQLite, MySQL, PostgreSQL).
                         <br>➡ Criar uma interface gráfica para tornar o projeto mais intuitivo.
@@ -239,7 +239,7 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                                    aria-controls="panelsStayOpen-collapseOne">
+                                    aria-controls="panelsStayOpen-collapseOne" class="javaaccordion">
                                     Explicação do Código (Java)
                                 </button>
                             </h2>
@@ -284,9 +284,21 @@
                                         System.out.print("Escolha uma opção: ");<br>
                                     </code>
                                     🔹 Mostra as opções do CRUD para o usuário.<br>
-                                    🔹 <code>System.out.print("Escolha uma opção: ");</code> → Exibe a pergunta sem pular linha.<br>
+                                    🔹 <code>System.out.print("Escolha uma opção: ");</code> → Exibe a pergunta sem
+                                    pular linha.<br>
                                     6️⃣ Captura da Entrada do Usuário<br>
-                                    <code>String opcao - scanner.nextLine();</code>
+                                    <code>String opcao - scanner.nextLine();</code><br>
+                                    🔹 Captura a opção digitada pelo usuário e armazena na variável opcao.<br>
+                                    🔹 <code>scanner.nextLine()</code> → Lê a entrada como String.<br>
+                                    7️⃣ Estrutura switch-case para as Opções<br>
+                                    🔹 switch (opcao) → Avalia o valor digitado pelo usuário.<br>
+                                    🔹 Dependendo da opção escolhida, chama uma das funções:<br>
+                                    "1" → Chama <code>criarUsuario()</code><br>
+                                    "2" → Chama <code>listarUsuarios()</code><br>
+                                    "3" → Chama <code>atualizarUsuario()</code><br>
+                                    "4" → Chama <code>deletarUsuario()</code><br>
+                                    "5" → Encerra o programa com return.<br>
+                                    Se a opção for inválida, exibe a mensagem "Opção inválida. Tente novamente.".<br>
                                 </div>
                             </div>
                         </div>
@@ -298,7 +310,8 @@
                         <strong class="mensagem-link">Veja o meu README e projeto abaixo:</strong>
                     </p>
                     <div class="link-github">
-                        <button><a href="https://github.com/PBPaschoal/Java/tree/main/Projetos/Meus%20Projetos/CrudUsuariosJava"
+                        <button><a
+                                href="https://github.com/PBPaschoal/Java/tree/main/Projetos/Meus%20Projetos/CrudUsuariosJava"
                                 target="_blank">Link do Projeto no
                                 GitHub</a></button>
                     </div>

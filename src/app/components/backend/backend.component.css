@@ -77,3 +77,11 @@ h5,
 .accordion-header button {
     color: rgb(255, 255, 255);
 }
+
+.accordion-header button.javaaccordion {
+    background-color: rgb(255, 0, 0);
+}
+
+.javacrud {
+    color: rgb(255, 0, 0);
+}
