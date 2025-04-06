@@ -50,21 +50,21 @@ h5,
     text-align: justify;
 }
 
-.link-github {
+.link-github, .link-linkedin {
     text-align: center;
 }
 
-.link-github button {
+.link-github button, .link-linkedin button{
     border-radius: 10px;
     background-color: rgb(22, 22, 22);
 }
 
-.link-github button a {
+.link-github button a, .link-linkedin button a {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
-.link-github button:hover,
+.link-github button:hover, .link-linkedin button:hover,
 .btn-dark:hover {
     background-color: rgb(110, 7, 199);
     transition: 0.6s;
