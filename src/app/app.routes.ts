@@ -10,6 +10,7 @@ import { AdmComponent } from './components/adm/adm.component';
 import { TiComponent } from './components/ti/ti.component';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { DesenvolvimentoSoftwareComponent } from './components/desenvolvimento-software/desenvolvimento-software.component';
+import { ProjetoRagnarokComponent } from './components/projeto-ragnarok/projeto-ragnarok.component';
 
 export const routes: Routes = [
   { path: '', component: PrimeiraSectionComponent },
@@ -23,4 +24,5 @@ export const routes: Routes = [
   { path: 'ti', component: TiComponent },
   { path: 'sobre', component: SobreComponent },
   { path: 'desenvolvimento-software', component: DesenvolvimentoSoftwareComponent },
+  { path: 'projeto-ragnarok', component: ProjetoRagnarokComponent},
 ];
