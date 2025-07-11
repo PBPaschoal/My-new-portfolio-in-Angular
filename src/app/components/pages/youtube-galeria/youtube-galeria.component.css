@@ -1,0 +1,49 @@
+.video-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    .main-video {
+        width: 100%;
+        max-width: 800px;
+        padding-top: 50px;
+
+        iframe {
+            border-radius: 12px;
+        }
+
+        .video-title {
+            margin-top: 0.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            text-align: center;
+        }
+    }
+
+    .thumbnail-list {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 50px;
+
+        .thumbnail {
+            cursor: pointer;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: border 0.3s;
+
+            &:hover {
+                border-color: #8e44ad;
+            }
+
+            img {
+                width: 100px;
+                height: 75px;
+                object-fit: cover;
+            }
+        }
+    }
+}

@@ -11,6 +11,7 @@ import { TiComponent } from './components/ti/ti.component';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { DesenvolvimentoSoftwareComponent } from './components/desenvolvimento-software/desenvolvimento-software.component';
 import { ProjetoRagnarokComponent } from './components/projeto-ragnarok/projeto-ragnarok.component';
+import { YoutubeGaleriaComponent } from './components/pages/youtube-galeria/youtube-galeria.component';
 
 export const routes: Routes = [
   { path: '', component: PrimeiraSectionComponent },
@@ -25,4 +26,5 @@ export const routes: Routes = [
   { path: 'sobre', component: SobreComponent },
   { path: 'desenvolvimento-software', component: DesenvolvimentoSoftwareComponent },
   { path: 'projeto-ragnarok', component: ProjetoRagnarokComponent},
+  { path: 'youtube-galeria', component: YoutubeGaleriaComponent},
 ];

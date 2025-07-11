@@ -1,0 +1,25 @@
+<!-- YouTube Gallery Component HTML + Angular -->
+<div class="video-gallery">
+  <!-- Video Player -->
+  <div class="main-video">
+    <iframe
+      width="100%"
+      height="400"
+      [src]="selectedVideo.url | safeUrl"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <h3 class="video-title">{{ selectedVideo.title }}</h3>
+  </div>
+
+  <!-- Thumbnails Gallery -->
+  <div class="thumbnail-list">
+    <div
+      class="thumbnail"
+      *ngFor="let video of videos"
+      (click)="selectVideo(video)"
+    >
+      <img [src]="video.thumbnail" [alt]="video.title" />
+    </div>
+  </div>
+</div>
