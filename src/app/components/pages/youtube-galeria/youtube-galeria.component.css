@@ -4,12 +4,15 @@
     align-items: center;
     gap: 1rem;
 
+    /* Vídeo principal */
     .main-video {
         width: 100%;
         max-width: 800px;
         padding-top: 50px;
 
         iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9; /* Mantém proporção responsiva */
             border-radius: 12px;
         }
 
@@ -21,29 +24,74 @@
         }
     }
 
+    /* Lista de linhas de miniaturas */
     .thumbnail-list {
         display: flex;
+        flex-direction: column;
         gap: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
         padding-bottom: 50px;
+        width: 100%;
+        max-width: 900px;
+    }
 
-        .thumbnail {
-            cursor: pointer;
-            border: 2px solid transparent;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: border 0.3s;
+    /* Linha de miniaturas */
+    .thumbnail-row {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
 
-            &:hover {
-                border-color: #8e44ad;
-            }
+    /* Miniatura individual */
+    .thumbnail {
+        cursor: pointer;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: border 0.3s;
 
-            img {
-                width: 100px;
-                height: 75px;
-                object-fit: cover;
-            }
+        &:hover {
+            border-color: #8e44ad;
+        }
+
+        img {
+            width: 140px;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+    }
+
+    /* ================= RESPONSIVIDADE ================= */
+
+    /* Tablet */
+    @media (max-width: 768px) {
+        .thumbnail-row {
+            flex-wrap: wrap; /* quebra linha automaticamente */
+            justify-content: center;
+        }
+
+        .thumbnail img {
+            width: 100px; /* menor no tablet */
+        }
+    }
+
+    /* Celular */
+    @media (max-width: 480px) {
+        .main-video {
+            padding-top: 20px;
+        }
+
+        .video-title {
+            font-size: 1rem;
+        }
+
+        .thumbnail img {
+            width: 200px; /* ainda menor no celular */
+        }
+
+        .thumbnail-row {
+            flex-wrap: wrap;
+            gap: 6px;
         }
     }
 }
