@@ -4,12 +4,9 @@ section.experiencia-informativo {
     padding-bottom: 5%;
 }
 
-h1 {
-    color: rgb(4, 161, 7);
-}
-
 h2 {
     color: rgb(20, 75, 224);
+    padding-bottom: 20px;
 }
 
 p {
