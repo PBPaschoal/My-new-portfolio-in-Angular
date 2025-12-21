@@ -3,6 +3,10 @@
     margin: 4%;
 }
 
+.card-body {
+    font-size: 14px;
+}
+
 .container {
     display: flex;
     flex-direction: row;

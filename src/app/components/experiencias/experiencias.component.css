@@ -5,8 +5,14 @@ section.experiencia-informativo {
 }
 
 h2 {
-    color: rgb(20, 75, 224);
+    font-size: 18px;
+    color: rgb(4, 12, 165);
+    text-align: center;
     padding-bottom: 20px;
+}
+
+.card-body {
+    font-size: 12px;
 }
 
 p {
