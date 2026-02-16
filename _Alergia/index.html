@@ -1,154 +1,220 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Recomendações Médicas - Alergia a Medicamentos</title>
-<!-- Bootstrap 5 -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="container py-5">
-
-    <div class="text-center mb-5">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recomendações Médicas - Alergia a Medicamentos</title>
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="text-center mb-5">
         <h1 class="fw-bold">Recomendações para Paulo Bruno Paschoal</h1>
         <p class="text-light">Documento Médico - Alergia a Medicamentos</p>
-    </div>
+      </div>
 
-    <!-- Campo de busca -->
-    <div class="mb-4">
-        <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="Pesquisar medicamento...">
-    </div>
+      <!-- Campo de busca -->
+      <div class="mb-4">
+        <input
+          type="text"
+          id="searchInput"
+          class="form-control form-control-lg"
+          placeholder="Pesquisar medicamento..."
+        />
+      </div>
 
-    <!-- MEDICAMENTOS PROIBIDOS -->
-    <div class="card card-custom p-4 mb-4">
+      <!-- MEDICAMENTOS PROIBIDOS -->
+      <div class="card card-custom p-4 mb-4">
         <h3 class="section-title text-danger">🚫 Medicamentos Proibidos</h3>
-        <hr class="border-light">
+        <hr class="border-light" />
 
         <div class="accordion" id="accordionProibidos">
-
-            <!-- AAS -->
-            <div class="accordion-item bg-transparent border-0">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed bg-danger text-white" data-bs-toggle="collapse" data-bs-target="#aas">
-                        Ácido Acetilsalicílico (AAS / Aspirina)
-                    </button>
-                </h2>
-                <div id="aas" class="accordion-collapse collapse">
-                    <div class="accordion-body searchable">
-                        AAS, Aspirina, Aspirina C, Alka-Seltzer, Engov, Doril, Melhoral, Sonrisal, Bufferin, Cibalena, Bayaspirina.
-                    </div>
-                </div>
+          <!-- AAS -->
+          <div class="accordion-item bg-transparent border-0">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed bg-danger text-white"
+                data-bs-toggle="collapse"
+                data-bs-target="#aas"
+              >
+                Ácido Acetilsalicílico ou Aspirina:
+              </button>
+            </h2>
+            <div id="aas" class="accordion-collapse collapse">
+              <div class="accordion-body searchable">
+                AAS, Acetil, Acetilsalil, Acetin, Ácido Acetilsalicílico,
+                Alka-Setzer, Alidor, Aspi C, Aspirina, Aspirina C, Aspirina
+                Forte, Aspirina Prevent, Aspirsan, Aspisin, Atagripe,
+                Bayaspirina, Besaprin, Bufferin, Bufferin C, Cefunk, Cheracap,
+                Cibalena, Coristina D, Doloxene A, Doril, Ecasil, Endosalil,
+                Endosporin, Engov, Estomazil, Fontol, Gripidal, Instatina,
+                Instantina, IntraAcetil, Ketalci, Melhoral, Migrane, Persantil
+                S, Procor-S, Rectocetil, Realgil, Ressak, Ronal, Sanacol,
+                Sedagrié, Somalgin, Somalgin Cardio, Sonrisal, Superhist.
+              </div>
             </div>
+          </div>
 
-            <!-- Dipirona -->
-            <div class="accordion-item bg-transparent border-0">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed bg-danger text-white" data-bs-toggle="collapse" data-bs-target="#dipirona">
-                        Dipirona e Pirazolônicos
-                    </button>
-                </h2>
-                <div id="dipirona" class="accordion-collapse collapse">
-                    <div class="accordion-body searchable">
-                        Dipirona, Novalgina, Dorflex, Anador, Neosaldina, Lisador, Baralgin, Magnopyrol.
-                    </div>
-                </div>
+          <!-- Dipirona -->
+          <div class="accordion-item bg-transparent border-0">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed bg-danger text-white"
+                data-bs-toggle="collapse"
+                data-bs-target="#dipirona"
+              >
+                Dipirona, Pirazolona, Pirazolônicos:
+              </button>
+            </h2>
+            <div id="dipirona" class="accordion-collapse collapse">
+              <div class="accordion-body searchable">
+                Algexin Composto, Algicê, Algiflex, Aminocid, Anador, Analgex,
+                Analdin, Analvrenin, Asclepina Angagedor, Apracur, Benegripe,
+                Baralgin, Beserol, Benstar, Bicavine, Bispasmin, Booutyciclina,
+                Bromalgina, Broncopinol, Buscopan Composto, Cefaldin, Cefaliv,
+                Comprimidos Metamizol Veafarm, Conmel, Contagrip, Debela,
+                Dexalgen, Diarona, Dilubrin, Dimex, Dipirol, Dipirona, Dipirone,
+                Doralgin, Doran, Dorflex, Doricin, Doril, Dorostil, Dorscopepa,
+                Dorspan, Composto, Espamobel, Espasmodid, Espasmodid Composto,
+                Espasmosan, Eucaliptol, Evergin, Farmidon, Farmidon Supositório,
+                Febralgin, Gripion, Gripol, Gripomatine, Hioscina, Inatrex,
+                Lisador, Magnopyrol, Metilsedor, Miocitalgan, Mionecrix,
+                Miorrelax, Nenribel, Nevralgina, Neosaldina, Neurlmon,
+                Novalgina, Parpinusan, Plenogripe, Rheivitine, Rielex, Sedalene,
+                Sedorex, Somaflex, Spasmotropin, Sulinor, Supositório de Bismuto
+                Composto, Tetrapulmo, Toloxin, Trinalgen, Tropinal.
+              </div>
             </div>
+          </div>
 
-            <!-- AINEs -->
-            <div class="accordion-item bg-transparent border-0">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed bg-danger text-white" data-bs-toggle="collapse" data-bs-target="#aines">
-                        Anti-inflamatórios Não Esteroidais
-                    </button>
-                </h2>
-                <div id="aines" class="accordion-collapse collapse">
-                    <div class="accordion-body searchable">
-                        Diclofenaco, Ibuprofeno, Nimesulida, Naproxeno, Cetoprofeno, Meloxicam, Piroxicam, Voltaren, Advil, Arcoxia, Celebra, Tandrilax, Torsilax.
-                    </div>
-                </div>
+          <!-- AINEs -->
+          <div class="accordion-item bg-transparent border-0">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed bg-danger text-white"
+                data-bs-toggle="collapse"
+                data-bs-target="#aines"
+              >
+                Anti-inflamatórios Não Esteroidais:
+              </button>
+            </h2>
+            <div id="aines" class="accordion-collapse collapse">
+              <div class="accordion-body searchable">
+                Ácido Aminocapróico, Advil, Algidanilon, Algiflan,
+                Algi-Peralgin, AlgiReumac, Anaflex, Analtrix, Anantrid, Arcoxia,
+                Artren, Artril, Artrinid, Atilan, Benevran, Benflogin,
+                Benzidamina, Benziflex, Benzinrat, Biofenac, Bi-profenid,
+                Brexin, Butapirin, Butazolidina, Butazolon, Butazona, Cálcica
+                Butazonil, Cataflam, Cefaliv, Celebra, Celecoxibe, Cetoprofeno,
+                Cicladol, Ciflogex, Cloridrato de Ciclobenzaprina, Danilon,
+                Deltaren, Diclofen, Diclofenaco Potássio, Diclofenaco Sódico,
+                Doretrim, Dorgen, Endoxican, Eriflogin, Eumotol, Evril, Fedupen,
+                Feldene, Feldox, Fenaflan, Felnan, Fenabren, Fenburil,
+                Fenilbutazona, Cálcica, Fepramazona, Flanamam, Flamerene,
+                Flamostat, Flanaren, Flanax, Flexalgin, Flogan, Flogotisol,
+                Flogoxen, Ibuprofeno, Florigen, Indocil, Inflamene, Inflanan,
+                Inflanox, Inflalax, Inflaren, Inflax, Ipilson, Keuril, Legil,
+                Lisedema, Mebron, Meloxicam, Metrazone, Mioflex, Mioflex A,
+                Monocentin, Motrim, Movatec, Naprosyn, Naproxeno, Nimesulida,
+                Nisulid, Imbolam, Ortoflan, Panflogin, Parartrin, Peralgin,
+                Piroxene, Piroxicam, Piroxifen, Piroxilam, Piroxil, Piroplus,
+                Probenzima, Profenid, Relaflex, Reumarem, Reumix, Rofecoxibe,
+                Scaflam, Sintalgin, Tandrex, Tandrexin, Tandrilax, Tenoxen,
+                Tenoxicam, Teoremin, Thiomucase, Tilatil, Torsilax, Vioxx,
+                Voltaren, Zepelan, Tylenol 750 mg, Tylenol DC, Tylenol Sinus.
+              </div>
             </div>
-
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- MEDICAMENTOS PERMITIDOS -->
-    <div class="card card-custom p-4 mb-4">
+      <!-- MEDICAMENTOS PERMITIDOS -->
+      <div class="card card-custom p-4 mb-4">
         <h3 class="section-title text-success">✅ Medicamentos Permitidos</h3>
-        <hr class="border-light">
+        <hr class="border-light" />
 
         <div class="row">
+          <div class="col-md-6 mb-3">
+            <h5>Antigripais:</h5>
+            <p class="searchable">
+              Asfen, Cimegripe, Coldrin, Descon, Fluvital, Gripcaps C, Gripen
+              Dia, Gripen Noite, Gripeol, Gripeonil, Multigrip, Naldecon Dia,
+              Naldecon Noite, Resfenol, Resfryneo, Resprin, Sinutab, Trimedal.
+            </p>
+          </div>
 
-            <div class="col-md-6 mb-3">
-                <h5>Para Gripe</h5>
-                <p class="searchable">Resfenol, Gripen Dia/Noite, Descon, Fluvital, Trimedal, Multigrip.</p>
-            </div>
+          <div class="col-md-6 mb-3">
+            <h5>Febre e Dor:</h5>
+            <p class="searchable">
+              Acetofen, Calpol, Cefaliun, Dórico, Pacemol, Parcel, Piramin, Sirdalud, Tylenol Tylephen, Tylenol 500 mg, Paracetamol 500 mg.
+            </p>
+          </div>
 
-            <div class="col-md-6 mb-3">
-                <h5>Febre e Dor</h5>
-                <p class="searchable">Paracetamol, Tylenol 500mg, Acetofen, Calpol, Pacemol.</p>
-            </div>
+          <div class="col-md-6 mb-3">
+            <h5>Anti-inflamatórios:</h5>
+            <p class="searchable">
+              Dorilax, Parenzyme Analgésico, Probenzima Analgésico, Tylex, Tramal, Daisan, Paracetamol + Tramadol.
+            </p>
+          </div>
 
-            <div class="col-md-6 mb-3">
-                <h5>Analgésicos Mais Fortes</h5>
-                <p class="searchable">Dorilax, Tylex, Tramal, Paracetamol + Tramadol.</p>
-            </div>
+          <div class="col-md-6 mb-3">
+            <h5>Antiespasmódicos:</h5>
+            <p class="searchable">Buscopan, Buscopan Plus.</p>
+          </div>
 
-            <div class="col-md-6 mb-3">
-                <h5>Espasmos / Cólica</h5>
-                <p class="searchable">Buscopan, Buscopan Plus.</p>
-            </div>
-
-            <div class="col-md-6 mb-3">
-                <h5>Estômago</h5>
-                <p class="searchable">Plasil, Bromoprida, Hidróxido de Alumínio, Sal de Frutas Eno, Ondansetrona.</p>
-            </div>
-
+          <div class="col-md-6 mb-3">
+            <h5>Anti-Ácidos:</h5>
+            <p class="searchable">
+              Bromoprida, Plasil, Eucil, Digesan, Hidróxido de alumínio, Sal de Frutas Eno, Ondansetrona.
+            </p>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <footer class="text-center mt-5">
+      <footer class="text-center mt-5">
         Documento emitido por especialista em Alergia e Imunologia Clínica.
-    </footer>
+      </footer>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const input = document.getElementById("searchInput");
+      const searchableElements = document.querySelectorAll(".searchable");
 
-</div>
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-const input = document.getElementById('searchInput');
-const searchableElements = document.querySelectorAll('.searchable');
+      input.addEventListener("input", function () {
+        const filter = this.value.toLowerCase().trim();
 
-input.addEventListener('input', function () {
-    const filter = this.value.toLowerCase().trim();
+        searchableElements.forEach((el) => {
+          const text = el.textContent.toLowerCase();
 
-    searchableElements.forEach(el => {
-        const text = el.textContent.toLowerCase();
-
-        if (filter === "") {
+          if (filter === "") {
             el.style.display = "block";
-            el.innerHTML = el.textContent; 
+            el.innerHTML = el.textContent;
             return;
-        }
+          }
 
-        if (text.includes(filter)) {
+          if (text.includes(filter)) {
             el.style.display = "block";
 
             // Destacar palavra encontrada
-            const regex = new RegExp(`(${filter})`, 'gi');
+            const regex = new RegExp(`(${filter})`, "gi");
             el.innerHTML = el.textContent.replace(regex, `<mark>$1</mark>`);
 
             // Abrir accordion automaticamente se estiver fechado
-            const collapse = el.closest('.accordion-collapse');
-            if (collapse && !collapse.classList.contains('show')) {
-                new bootstrap.Collapse(collapse, { toggle: true });
+            const collapse = el.closest(".accordion-collapse");
+            if (collapse && !collapse.classList.contains("show")) {
+              new bootstrap.Collapse(collapse, { toggle: true });
             }
-
-        } else {
+          } else {
             el.style.display = "none";
-        }
-    });
-});
-</script>
-</body>
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
