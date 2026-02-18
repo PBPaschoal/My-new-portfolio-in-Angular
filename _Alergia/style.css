@@ -34,8 +34,12 @@ input::placeholder {
     color: rgb(203, 213, 225) !important;
 }
 
-.row, .accordion-body {
+.row, .accordion-body, .click {
     color: rgb(203, 213, 225);
+}
+
+.click {
+    font-size: 14px;
 }
 
 mark {
